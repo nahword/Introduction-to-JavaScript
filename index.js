@@ -63,9 +63,9 @@ Do the following:
 
 function multiply(d,e){
     const f = d * e;
-    return f
+    return f;
   }
-multiply(2,3)
+multiply(2,3);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -78,10 +78,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    const dogAge = age * 7;
+    return dogAge;
 }
-
+dogYears()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -111,11 +112,29 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(age,weight){
+  let g = Math.round(weight);
+  if(age >= 1){
+    if (g <= 5){
+      const feedReq = weight * .05;
+    } else if (g <= 10){
+      const feedReq = weight * .04;
+    } else if (g <= 15){
+      const feedReq = weight * .03;
+    } else {
+      const feedReq = weight * .02;
+    }
+  } else{
+    if(age >= 0.16667 && age <= 0.33333){
+      const feedReq = weight * .1;
+    } else if(age <= 0.58333){
+      const feedReq = weight * .05;
+    } else {
+      const feedReq = weight * .4;
+    }
   }
-
-
+  Return (feedReq);
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
