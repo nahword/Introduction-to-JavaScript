@@ -17,11 +17,13 @@ Do the following:
 
    HINT: no function required
 */
+
 let age = 30;
 const votingAge = 18;
 if (age >= 18){
   console.log(true);
 }
+
 /*
 Task 1b - Values
 
@@ -32,6 +34,7 @@ Do the following:
 
    HINT: no function required
 */
+
 let a = 20;
 const b=24;
 for (a = 20; a <= b; a++){
@@ -48,6 +51,7 @@ Do the following:
 
    HINT: look up the Number method
 */
+
 const c = '1999';
 Number(c);
 console.log(c)
@@ -62,11 +66,9 @@ Do the following:
 */
 
 function multiply(d,e){
-    const f = d * e;
-    return f;
-  }
-multiply(2,3);
-
+  const f = d * e;
+  return f;
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -79,11 +81,9 @@ Do the following:
 */
 
 function dogYears(age){
-    const dogAge = age * 7;
-    return dogAge;
+  const dogAge = age * 7;
+  return dogAge;
 }
-dogYears()
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -159,6 +159,7 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+
 let computer = (Math.round(Math.random) + Math.round(Math.random) + Math.round(Math.random))
 if(Math.ceil(computer) === 3){
   const computer = "rock";
@@ -192,8 +193,6 @@ function game(user, computer){
     return("Please enter 'rock', 'paper', or 'scissors'.");
   }
 }
-  
-  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -207,10 +206,8 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-    return(km* 0.621371)
-  }
-
-
+  return(km* 0.621371)
+}
 
 //Task 5b - Feet to CM
 /*
@@ -221,12 +218,10 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-    return(cm / 30.48)
-  }
- 
+  return(cm / 30.48)
+}
 
-
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+  /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Let's Sing 99 Bottles of Soda on the Wall!
 /*
@@ -237,11 +232,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(g){
-        for(Number(g); g > 0; g--){
-          return(`${g} bottles of soda on the wall, ${g} bottles of soda, take one down pass it around ${g-1} bottles of soda on the wall`)
-        }
+  for(Number(g); g > 0; g--){
+    return(`${g} bottles of soda on the wall, ${g} bottles of soda, take one down pass it around ${g-1} bottles of soda on the wall`)
   }
-
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
