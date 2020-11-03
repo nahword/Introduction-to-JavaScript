@@ -220,8 +220,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return(cm / 30.48)
   }
  
 
@@ -236,8 +236,10 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(g){
+        for(Number(g); g > 0; g--){
+          return(`${g} bottles of soda on the wall, ${g} bottles of soda, take one down pass it around ${g-1} bottles of soda on the wall`)
+        }
   }
 
 
