@@ -17,9 +17,11 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let age = 30;
+const votingAge = 18;
+if (age >= 18){
+  console.log(true);
+}
 /*
 Task 1b - Values
 
@@ -30,10 +32,11 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
-
+let a = 20;
+const b=24;
+for (a = 20; a <= b; a++){
+  console.log(a);
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -45,9 +48,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
+const c = '1999';
+Number(c);
+console.log(c)
 
 /*
 Task 1d - Multiply
@@ -58,10 +61,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(d,e){
+    const f = d * e;
+    return f
   }
-
+multiply(2,3)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
