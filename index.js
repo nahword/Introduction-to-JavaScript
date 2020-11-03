@@ -258,8 +258,18 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(h){
+    if(h >= 90){
+      return("you got an A");
+    }else if(h >= 80){
+      return("you got a B");
+    }else if(h >= 70){
+      return("you got a C");
+    }else if(h >= 60){
+      return("you got a D");
+    }else{
+      return("you failed.");
+    }
   }
   
   
