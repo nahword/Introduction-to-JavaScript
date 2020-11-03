@@ -112,28 +112,33 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age,weight){
-  let g = Math.round(weight);
+function hungryDog(weight,age){
   if(age >= 1){
-    if (g <= 5){
-      const feedReq = weight * .05;
-    } else if (g <= 10){
-      const feedReq = weight * .04;
-    } else if (g <= 15){
-      const feedReq = weight * .03;
+    if (weight <= 5){
+      let feedReq = weight * 0.05;
+      return feedReq;
+    } else if (weight <= 10){
+      let feedReq = weight * 0.04;
+      return feedReq;
+    } else if (weight <= 15){
+      let feedReq = weight * 0.03;
+      return feedReq;
     } else {
-      const feedReq = weight * .02;
+      let feedReq = weight * 0.02;
+      return feedReq;
     }
   } else{
-    if(age >= 0.16667 && age <= 0.33333){
-      const feedReq = weight * .1;
-    } else if(age <= 0.58333){
-      const feedReq = weight * .05;
+    if(age >= 0.16666666666666666 && age <= 0.33333333333333333){
+      const feedReq = weight * 0.1;
+      return feedReq;
+    } else if(age <= 0.58333333333333333){
+      const feedReq = weight * 0.05;
+      return feedReq;
     } else {
-      const feedReq = weight * .4;
+      const feedReq = weight * 0.4;
+      return feedReq;
     }
   }
-  Return (feedReq);
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -154,9 +159,38 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-
+let computer = (Math.round(Math.random) + Math.round(Math.random) + Math.round(Math.random))
+if(Math.ceil(computer) === 3){
+  const computer = "rock";
+}else if(Math.ceil(computer) === 2){
+  const computer = "paper";
+}else {
+  const computer = "scissors";
+}
 function game(user, computer){
-    /*add your code here*/
+  if(user === computer){
+    return("it's a tie");
+  }else if(user === "paper"){
+    if(computer === "scissors"){
+      return("you lose!");
+    }else {
+      return("you win!");
+    }
+  }else if(user === "rock"){
+    if (computer === "paper"){
+      return("you lose!");
+    }else {
+      return("you win!");
+    }
+  }else if(user === "scissors"){
+    if(computer === "rock"){
+      return("you lose!");
+    }else {
+      return("you win!");
+    }
+  }else{
+    return("Please enter 'rock', 'paper', or 'scissors'.");
+  }
 }
   
   
@@ -172,8 +206,8 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    return(km* 0.621371)
   }
 
 
